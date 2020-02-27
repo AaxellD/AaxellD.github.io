@@ -86,6 +86,8 @@ text-align: center;
 
     #openModal {
         border: 2px solid azure;
+        color:white;
+        
         width: 200px;
         padding:20px;
         margin:20px 0px;
