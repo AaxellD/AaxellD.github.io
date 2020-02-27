@@ -14,32 +14,37 @@
 
 
 <body>
+    <!-- wrapper for background image -->
     <div class="wrapper">
-    <div class="container">
-        <h1 class="title">Stock View</h1>
-    
-        <button id='openModal'>Learn More</button>
-        <hr class="line">
-        <hr>
-        <div id='modal'>
-            <div id='modal-textbox'>
-                <h3>Build your World by Investing</h3>
-                <p>Search companies in this query to discover which companies are worth investing.</p>  
-                <p>Click the company box to open the stats of that company.</p>
-                <button class="modal-buttons" id="closeModal" href="#">Close</button> 
+        <!-- container for content -->
+        <div class="container">
+            <!-- title -->
+            <h1 class="title">Stock View</h1>
+            <!-- modal button -->
+            <button id='openModal'>Learn More</button>
+            <hr class="line">
+            <hr>
+            <div id='modal'>
+                <div id='modal-textbox'>
+                    <h3>Build your World by Investing</h3>
+                    <p>Search companies in this query to discover which companies are worth investing.</p>  
+                    <p>Click the company box to open the stats of that company.</p>
+                    <button class="modal-buttons" id="closeModal" href="#">Close</button> 
+                </div>
             </div>
-        </div>
+            <!-- Start Form Query -->
+            <form>
+                <input type="text" id='input-field'>
+                <input type="submit" id="submitButton">
+            </form>
+            <!-- Content produced is deployed here -->
+            <div id="theBox">
 
-        <form>
-            <input type="text" id='input-field'>
-            <input type="submit" id="submitButton">
-        </form>
-        <div id="theBox">
-
-        </div>
-    </div> <!--end container-->
+            </div>
+        </div> <!--end container-->
     </div> <!--end wrapper-->
     
+    <!-- Footer INFO -->
     <footer>
         <div id="importInfo">
          <h2>Data Imported By</h2>
