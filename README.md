@@ -1,4 +1,4 @@
-# StockView.github.io
+# StockView
 Stock Analysis App
 
 // -----------GOAL-----------------//
