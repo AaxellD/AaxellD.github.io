@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box of Sand</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src='app.js' defer></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>Box of Sand</h1>
+    
+        <button id='openModal'>Learn More</button>
+        <hr class="line">
+        <hr>
+        <div id='modal'>
+            <div id='modal-textbox'>
+                <h3>Build your World by Investing</h3>
+                <p>Search companies in this query to discover which companies are worth investing.</p>  
+                <p>Click the company box to open the stats of that company.</p>
+                <button class="modal-buttons" id="closeModal" href="#">Close</button> 
+            </div>
+        </div>
+
+        <form>
+            <input type="text" id='input-field'>
+            <input type="submit" id="submitButton">
+        </form>
+        <div id="theBox">
+
+        </div>
+    </div>
+
+    <footer>
+        <h2>Data Imported From</h2>
+        <a href="http://alphavantage.co">Alpha Vantage</a>
+        <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
+        <a href="https://iexcloud.io">IEX Cloud</a>
+    </footer>
+</body>
+
+
+</html>
