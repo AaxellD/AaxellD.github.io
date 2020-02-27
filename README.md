@@ -1,4 +1,4 @@
-# AaxellD.github.io
+# StockView.github.io
 Stock Analysis App
 
 // -----------GOAL-----------------//
