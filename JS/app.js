@@ -37,6 +37,7 @@ const openModal = () => {
 $openModal.on('click', openModal);
 $closeModal.on('click', closeModal);
 
+
 // // ----- SET INITIAL VARIABLES------//
 
 //--- GET DATE FOR API's
@@ -83,7 +84,8 @@ $('form').on('submit', (event) => {
 
     // // COLLECT USER INPUT
     const userInput = $('#input-field').val();
-    
+
+          /////////////////////// TEST START
         // Create wrapper for stock stats and info
         let $stockBlock = $('<div>').addClass('stockBlock');
         $('#theBox').append($stockBlock);
@@ -104,13 +106,13 @@ $('form').on('submit', (event) => {
 
         $stockDate = $('<h4>').text(`Date of Info: ${shortToday}`)
         $stockBlock.append($stockDate)
-
+            /////////////////////////// TEST END
+        
     // // REQUEST #1 - IEXAPIS - COMPANY INFO;
     $.ajax({
         url: `https://cloud.iexapis.com/stable/stock/${userInput}/company?token=pk_98abe0fd9e4b4f7fbb4d3ed68c0dad8f`
     }).done(
         (data) => {
-            console.log(data)
             $stockBlock.prepend($('<h2>').text(data.companyName))
         }
     );

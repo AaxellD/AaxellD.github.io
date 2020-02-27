@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box of Sand</title>
+    <title>Stock View</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src='js/app.js' defer></script>
+    <script src='JS/app.js' defer></script>
 
     <link rel="stylesheet" href='CSS/main.css'>
 </head>
 
 
 <body>
-
+    <div class="wrapper">
     <div class="container">
-        <h1>Box of Sand</h1>
+        <h1 class="title">Stock View</h1>
     
         <button id='openModal'>Learn More</button>
         <hr class="line">
@@ -36,14 +36,16 @@
         <div id="theBox">
 
         </div>
-    </div>
-
+    </div> <!--end container-->
+    </div> <!--end wrapper-->
+    
     <footer>
-        <h2>Data Imported From</h2>
-        <a href="http://alphavantage.co">Alpha Vantage</a>
-        <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
-        <a href="https://iexcloud.io">IEX Cloud</a>
+        <div id="importInfo">
+         <h2>Data Imported By</h2>
+        <a href="https://iexcloud.io"> IEX Cloud</a>   
+        </div>
     </footer>
+
 </body>
 
 
